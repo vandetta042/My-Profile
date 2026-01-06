@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nwankwo Kinglsey — Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <img class="avatar" src="avatar.png" alt="Nwankwo Kingsley" onerror="this.style.display='none'" />
+      <div>
+        <h1 id="name">Nwankwo Kingsley</h1>
+        <p class="tagline">Software Developer</p>
+        <p class="bio">I build accessible, performant web applications and enjoy solving real-world problems with technology.</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/nwankwo-kingsley-702594250" id="linkedin">LinkedIn</a>
+          <a href="https://github.com/vandetta042" id="github">GitHub</a>
+          <a href="https://x.com/okaRa_muo" id="twitter">Twitter</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="split">
+      <div class="card">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>SQL &amp; PostgreSQL</li>
+        </ul>
+      </div>
+
+      <div class="card contact-card">
+        <h2>Contact Me</h2>
+        <form id="contactForm" novalidate>
+          <label for="nameInput">Name</label>
+          <input id="nameInput" name="name" type="text" required />
+
+          <label for="emailInput">Email</label>
+          <input id="emailInput" name="email" type="email" required />
+
+          <label for="messageInput">Message</label>
+          <textarea id="messageInput" name="message" rows="6" required></textarea>
+
+          <div class="form-row">
+            <button type="submit" id="sendBtn">Send Message</button>
+            <button type="button" id="clearBtn" class="muted">Clear</button>
+          </div>
+
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Nwankwo Kingsley</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
